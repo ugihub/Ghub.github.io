@@ -4,94 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HealthCare</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <header class="bg-lime-600 text-white p-4">
+    <!-- INI NAVBAR -->
+    <header class="bg-blue-600 text-white p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">HealthCare Services</h1>
+            <h1 class="text-2xl font-bold">SehatBersama</h1>
             <button id="menu-toggle" class="md:hidden p-2">Menu</button>
             <nav id="navbar" class="hidden md:flex">
                 <ul class="flex space-x-4">
                     <li><a href="#about" class="hover:underline">About Us</a></li>
-                    <li><a href="#menu" class="hover:underline">Menu</a></li>
+                    <li><a href="#services" class="hover:underline">Menu</a></li>
                     <li><a href="#contact" class="hover:underline">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <!-- INI NAVBAR -->
 
     <!-- Main Content Section -->
-    <main class="container mx-auto p-4">
+    <main class="container p-auto m-auto ">
         <!-- About Us Section -->
-        <section id="about" class="my-8 p-4 bg-white rounded shadow">
-            <h2 class="text-xl font-semibold">About Us</h2>
-            <p>We provide comprehensive healthcare services to ensure your well-being.</p>
+        <section id="about" class="p-4 bg-[url('IMG/CoverTen.jpg')] bg-cover bg-center rounded shadow min-h-screen ">
+            <h1 class="text-4xl font-bold mt-5 text-2xl">Tentang Kami</h1>
+            <p class="text-xl py-3 px-2">PT Sehat Bersama adalah penyedia layanan kesehatan terkemuka yang berdedikasi untuk
+                memberikan pelayanan<br>
+                berkualitas tinggi. Dengan tim medis ahli dan fasilitas modern, kami menawarkan berbagai layanan
+                seperti<br>
+                konsultasi medis, pemeriksaan diagnostik, dan rawat inap. Berkomitmen pada keselamatan dan
+                kesejahteraan<br>
+                pasien, kami terus mengadopsi inovasi dan standar internasional untuk memberikan layanan terbaik.</p>
+            <a href="#services" type="button" class="bg-blue-600 rounded-xl px-10 py-3 my-10 text-white hover:underline">Informasi</a>
+            <a href="#doctors" type="button" class="bg-blue-600 rounded-xl px-10 py-3 my-10 text-white hover:underline">konsultasi</a>
         </section>
 
-        <!-- Services Section -->
-        <section id="services" class="my-8 p-4 bg-white rounded shadow">
-            <h2 class="text-xl font-semibold">Our Services</h2>
-            <ul class="list-disc pl-5">
-                <li>Telemedicine</li>
-                <li>Emergency Care</li>
-                <li>Health Check-ups</li>
-                <li>Specialized Treatments</li>
-            </ul>
-        </section>
-
-        <!-- Our Doctors Section -->
-        <section id="doctors" class="my-8 p-4 bg-white rounded shadow">
-            <h2 class="text-xl font-semibold">Meet Our Doctors</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="p-4 border rounded shadow">
-                    <h3 class="font-bold">Dr. Jane Doe</h3>
-                    <p>Specialty: General Medicine</p>
-                </div>
-                <div class="p-4 border rounded shadow">
-                    <h3 class="font-bold">Dr. John Smith</h3>
-                    <p>Specialty: Pediatrics</p>
+        <!-- Services -->
+        <section id="services"
+            class="flex items-center justify-center my-8 p-8 bg-[url('IMG/CoverSer.jpg')] bg-cover bg-center rounded shadow min-h-screen">
+            <div class="text-center bg-white rounded shadow h-auto p-9">
+                <h2 class="text-4xl font-bold mb-4 text-gray-800">Layanan Kami</h2>
+                <ul class="list-none pl-5 text-left mx-auto max-w-md grid-cols-3 auto-cols-auto">
+                    <li class="mb-2 text-lg bg-white rounded px-2">🌐 <span class="font-semibold">Telemedicine:</span>
+                        Consult with our doctors from the comfort of your home.</li>
+                    <li class="mb-2 text-lg bg-white rounded px-2">🚑 <span class="font-semibold">Emergency Care:</span>
+                        Immediate assistance for urgent health issues.</li>
+                    <li class="mb-2 text-lg bg-white rounded px-2">🩺 <span class="font-semibold">Health
+                            Check-ups:</span> Regular health assessments for preventative care.</li>
+                    <li class="mb-2 text-lg bg-white rounded px-2">💊 <span class="font-semibold">Specialized
+                            Treatments:</span> Tailored care for specific health concerns.</li>
+                </ul>
+                <div class="mt-5">
+                    <a href="#doctors"
+                        class="mt-6 bg-blue-600 text-white rounded-xl px-6 py-3 hover:bg-blue-700 transition duration-300">Buat Jadwal</a>
+                    <a href="#about"
+                        class="t-6 bg-blue-600 text-white rounded-xl px-6 py-3 hover:bg-blue-700 transition duration-300">Kembali</a>
                 </div>
             </div>
         </section>
 
-        <!-- Appointment Booking Section -->
+        <!-- Doctor -->
+        <section id="doctors" class="my-8 p-4 bg-white rounded shadow">
+            <h2 class="text-xl font-semibold">Dokter</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-4 border rounded shadow">
+                    <h3 class="font-bold">Dr. Jane Doe</h3>
+                    <p>Spesialis: Saraf</p>
+                </div>
+                <div class="p-4 border rounded shadow">
+                    <h3 class="font-bold">Dr. John Smith</h3>
+                    <p>Spesialis: Tulang</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking -->
         <section id="appointments" class="my-8 p-4 bg-white rounded shadow">
-            <h2 class="text-xl font-semibold">Book an Appointment</h2>
+            <h2 class="text-xl font-semibold">Buat Jadwal konsultasi</h2>
             <form action="#" method="post" class="space-y-4">
                 <div>
-                    <label for="name" class="block">Name:</label>
+                    <label for="name" class="block">Nama:</label>
                     <input type="text" id="name" name="name" required class="border rounded w-full p-2">
                 </div>
                 <div>
-                    <label for="date" class="block">Date:</label>
+                    <label for="date" class="block">Tanggal:</label>
                     <input type="date" id="date" name="date" required class="border rounded w-full p-2">
                 </div>
                 <div>
-                    <label for="time" class="block">Time:</label>
+                    <label for="time" class="block">Jam:</label>
                     <input type="time" id="time" name="time" required class="border rounded w-full p-2">
                 </div>
-                <button type="submit" class="bg-blue-600 text-white p-2 rounded">Book Appointment</button>
+                <button type="button" onclick="myFunction()"
+                class="bg-blue-600 text-white p-2 rounded hover:underline">Submit</button>
             </form>
         </section>
     </main>
 
-    <!-- Footer Section -->
-    <footer class="bg-blue-600 text-white text-center p-4">
-        <p>&copy; 2024 HealthCare Services. All rights reserved.</p>
-        <p><a href="#privacy" class="hover:underline">Privacy Policy</a> | <a href="#terms"
-                class="hover:underline">Terms and Conditions</a></p>
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center p-4" id="#contact">
+        <p>&copy; 2024 SehatBersama Services. Semua Kami Layani.</p>
+        <p><a href="#" class="hover:underline">ugisugiman6@gmail.com</a> | <a href="https://wa.me/6285156962571?text=Halodok Saya mau konsultasi dong"
+                class="hover:underline">Whatsapp</a></p>
     </footer>
 
     <script>
-        // JavaScript for interactive UX
+        // JavaScript NAVBAR
         $(document).ready(function () {
             $('#menu-toggle').click(function () {
                 $('#navbar').toggleClass('hidden');
             });
         });
+
+        function myFunction(){
+            alert('Kamu Sudah mendaftar');
+        }
     </script>
 </body>
 
